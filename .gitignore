@@ -1,0 +1,10 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+.env
+.env.local
+.vercel
+.claude/

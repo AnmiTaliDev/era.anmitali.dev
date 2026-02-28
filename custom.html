@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Era — Свой таймер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo">Era</a>
+        <a href="index.html" class="nav-link">← Главная</a>
+      </div>
+      <div class="header-right">
+        <button id="theme-toggle" class="theme-toggle-btn">
+          <span id="theme-icon" class="theme-icon">○</span>
+          <span id="theme-label" class="theme-label">Авто</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="page-title">Свой таймер</h1>
+
+      <form id="custom-timer-form" class="form">
+        <div class="field-group">
+          <label class="label" for="timer-name">Название</label>
+          <input id="timer-name" class="input" type="text" placeholder="Например: Отпуск" maxlength="80" required>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label class="label" for="timer-date">Дата</label>
+            <input id="timer-date" class="input" type="date" required>
+          </div>
+
+          <div class="field-group">
+            <label class="label" for="timer-theme">Цветовая тема</label>
+            <select id="timer-theme" class="input">
+              <option value="">По умолчанию</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="submit-btn" class="submit-btn" type="submit">Создать таймер</button>
+      </form>
+
+      <div id="share-box" class="share-box" style="display: none;">
+        <span class="share-label">Ссылка для шаринга</span>
+        <div class="share-row">
+          <input id="share-input" class="share-input" type="text" readonly>
+          <button id="copy-btn" class="copy-btn">Копировать</button>
+        </div>
+      </div>
+
+      <div class="saved-section">
+        <div id="saved-title" class="saved-title">Сохранённые таймеры (0)</div>
+        <div id="saved-list" class="saved-list">
+          <p class="empty-msg">Пока нет сохранённых таймеров</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Era &mdash; era.anmitali.dev</span>
+      <a href="https://github.com/AnmiTaliDev/era.anmitali.dev" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+    </footer>
+  </div>
+
+  <script type="module" src="js/custom-app.js"></script>
+</body>
+</html>
